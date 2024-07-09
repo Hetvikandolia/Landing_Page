@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "Gilroy-SemiBold"; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height:100vh; 
+    /* % is used when , according to whole screen and vh(view-point) used when parent object */
+    /* background-color: black; */
+}
+#back{
+    width: 100%;
+    height:100vh; 
+    background-color: black;
+}
+#back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #000000d8; */
+    /* background-color: aliceblue; */
+}
+#workingarea{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+     /* border: 1px solid #7AB2B2; */
+     position: relative;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+#nav img{
+    /* padding-left: 5rem; */
+    height: 70px;
+}
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#nav a{
+    pointer-events: all; /*we can clicks link after swap page*/
+    text-decoration: none; /*remove underline*/
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    /* font-family: "gilroy"; */
+}
+#photu{
+    position: absolute;
+    /* u hve to do make its parent class (workingarea) relative */
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    /* first for width another height */
+    display: flex;
+    justify-content: space-between;
+    /* take content between objects  */
+    width: 100%;
+    /* height: 100px;  */
+    /* background-color: #CDE8E5; */
+}
+#phleft{
+    margin-top: 4rem;
+    min-width:50%;
+    /* height: 100px; */
+    /* background-color: yellow; */
+}
+#phleft .elem{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+    /* background-color:red ; */
+} 
+#phleft .elem h1:nth-child(1){
+    top: 0;
+}
+#phleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw; /*viewport width for fonts*/
+}
+#phleft button{
+    pointer-events: all ;
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: "kajiro";
+}
+#phright{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end ;
+    width: 22%;
+    /* height: 100px; */
+    /* background-color:green ; */
+    color: #fff;
+}
+#phright p{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: right;
+}
+#phright #imgdiv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://plus.unsplash.com/premium_photo-1695339146320-fd85d7b59118?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position:center;
+}
+#phright p:nth-child(3){
+    margin-bottom: 30px;
+    /* color: red; */
+} 
