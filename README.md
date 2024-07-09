@@ -2,6 +2,6 @@
 
 📌Used Frontend technologies ( Html , css , Js ).
 
-📌ALso used some animating libraries (gsap, three js etc).
+📌Also used some animating libraries (gsap, three js etc).
 
 📌Used shery.js NPM package for javascript. 
